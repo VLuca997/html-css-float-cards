@@ -9,12 +9,26 @@
 
 
 /*
-SEZIONE FONT
+    BODY
 */
-*{
+body{
     font-family: 'Fredoka', sans-serif;
 }
 
+
+/*
+    HEADING PAGE
+*/
+.head-title{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.description{
+    text-align: center;
+}
 
 /*
 CONTAINER
@@ -22,17 +36,20 @@ CONTAINER
 .container-general{
     max-width: 1200px;
     margin: 0 auto;
-    background-color: lightgray;
 }
 
-/*
-    HEADING PAGE
-*/
 
-.head-title{
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 70px;
-    font-size: 2.5em;
-    font-weight: bolder;
+
+
+
+/*
+    DEBUG
+*/
+.debug main{
+    background-color: red;
+}
+.debug main .container-general{
+    background-color: royalblue;
+    border: 2px solid greenyellow;
+    min-height: 300px;
 }

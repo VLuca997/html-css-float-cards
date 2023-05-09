@@ -7,6 +7,7 @@
     padding: 0;
 }
 
+
 /*
     CLEARFIX
 */
@@ -34,11 +35,13 @@ body{
     padding-bottom: 70px;
     font-size: 2.5em;
     font-weight: bolder;
+    color: #E53170;
 }
 .description{
     text-align: center;
     margin-bottom: 40px;
 }
+
 
 /*
 CONTAINER
@@ -51,32 +54,62 @@ CONTAINER
     margin-left: 20px;
     margin-right: 20px;
 }
+
+
 /*
     CARD 
 */
 .idcard{
     height: 130px;
+    float: left;
+    
+}
+.idcard >*{
+    float: left;
+    color: white;
 }
 .card-container > * {
     float: left;
     height: 130px;
-    background-color: black;
+    background-color:black;
     margin-bottom: 50px;
 }
 .card-container > .idcard{
     width: calc((100% - 40px) / 3);
 }
-img{
+.card-container > .idcard > img{
     width: 130px;
-    display: inline-block;
+    display: block;
 }
+.card-container > .infocard > *:not(a){
+    color: white;
+}
+.card-container > .infocard > a{
+    color: #6FC5E7;
+    text-decoration: none;
+}
+.idcard > .infocard > h2{
+
+    margin-top: 5px;
+}
+.idcard > .infocard > h4{
+    font-weight: normal;
+    margin: 10px 0;
+}
+.idcard > .infocard{
+    padding: 10px;
+}
+
+
+
+
 
 
 
 /*
     DEBUG
 */
-.debug main{
+/* .debug main{
     background-color: red;
 }
 .debug main .container-general{
@@ -92,4 +125,4 @@ img{
 .debug .card-container >*{
     border: 1px solid orangered;
     
-}
+} */
